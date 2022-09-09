@@ -3,7 +3,9 @@ package com.glovoapp.demo.common;
 import java.net.URI;
 
 public class WorkLoads {
-  private WorkLoads() {}
+
+  private WorkLoads() {
+  }
 
   public static String callApi() {
     try {
