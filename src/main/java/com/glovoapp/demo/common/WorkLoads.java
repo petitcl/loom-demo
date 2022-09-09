@@ -21,17 +21,6 @@ public class WorkLoads {
     }
   }
 
-  public static void sleep() {
-    System.err.printf("Starting thread %s !%n", Thread.currentThread());
-    try {
-      Thread.sleep(3000);
-    } catch (Exception e) {
-      throw new RuntimeException(e);
-    } finally {
-      System.err.printf("Ending thread %s !%n", Thread.currentThread());
-    }
-  }
-
   public static void silentSleep() {
     try {
       Thread.sleep(3000);
